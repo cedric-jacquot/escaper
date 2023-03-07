@@ -1,0 +1,13 @@
+// boostrap overide
+$primary: #10ffcb;
+$text-primary: 34344A;
+@import "bootstrap";
+
+:root {
+  --font-general: 'Golos Text', sans-serif;
+  --font-script: 'Square Peg', sans-serif;
+}
+
+body {
+  font-family: var(--font-general);
+}
