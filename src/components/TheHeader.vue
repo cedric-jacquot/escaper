@@ -2,34 +2,39 @@
 
 <template>
   <header>
-    <nav>
-        <div class="nav_container d-flex justify-content-between align-items-center">
-            <div class="nav_left">
-                <img class="logo " src="../assets/images/escaper_logo.png" alt="Logo Escaper" />
-            </div>
-            <div class="nav_right w-40 d-flex justify-content-between">
-                <a href="#">+ Ajouter un spot</a>
-                <a href="#">Créer un compte</a>
-                <button type="button" class="btn btn-primary">Primary</button>
-            </div>
-        </div>
-
+    <nav class="d-flex flex-row justify-content-between align-items-center">
+      <div class="nav_left">
+        <a href="#">
+            <img class="logo" src="../assets/images/mountains.png" alt="Logo Escaper" />
+        </a>
+      </div>
+      <div class="nav_right w-40 d-flex justify-content-end align-items-center">
+        <a href="#">+ Ajouter un spot</a>
+        <a href="#">Créer un compte</a>
+        <button type="button" class="btn btn-primary btn-sm text-white">Se connecter</button>
+      </div>
     </nav>
   </header>
 </template>
 
 <style lang="scss" scoped>
 nav {
-    background-color: grey;
-    height: 60px;
+//   background-color: rgba(128, 128, 128, 0.063);
+  height: 60px;
+  padding: 20px;
+  position: fixed;
+  width: 100vw;
 }
 .logo {
-    width: 100px;
+  width: 100px;
 }
 .nav_left {
-    width: 70%;
+  width: 50%;
 }
 .nav_right {
-    width: 30%;
+  width: 50%;
+}
+.nav_right > * {
+    margin-left: 20px;
 }
 </style>

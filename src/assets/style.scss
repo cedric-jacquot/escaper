@@ -1,13 +1,20 @@
 // boostrap overide
-$primary: #10ffcb;
-$text-primary: 34344A;
+$primary: #3aafb9;
 @import "bootstrap";
+@import 'bootstrap-icons/font/bootstrap-icons.css';
 
 :root {
   --font-general: 'Golos Text', sans-serif;
   --font-script: 'Square Peg', sans-serif;
+  --primary-color: #3aafb9;
+  --second-color: #048a81;
 }
-
 body {
   font-family: var(--font-general);
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
 }
