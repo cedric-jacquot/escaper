@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import 'bootstrap/dist/css/bootstrap.min.css'
 import TheHeader from './components/TheHeader.vue'
-import Search from './components/Search.vue'
-import LatestSpots from './components/LatestSpots.vue'
+import TheSearch from './components/TheSearch.vue'
+import TheSpots from './components/TheSpots.vue'
 import TheFooter from './components/TheFooter.vue'
 </script>
 
@@ -10,8 +10,8 @@ import TheFooter from './components/TheFooter.vue'
     <TheHeader />
 
   <main>
-    <Search />
-    <LatestSpots />
+    <TheSearch />
+    <TheSpots />
   </main>
 
     <TheFooter />
