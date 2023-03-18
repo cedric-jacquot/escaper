@@ -2,19 +2,19 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import TheHeader from './components/TheHeader.vue'
 import Search from './components/Search.vue'
-import LatestSpots from './components/LatestSpots.vue'
+import Spots from './components/Spots.vue'
 import TheFooter from './components/TheFooter.vue'
 </script>
 
 <template>
-    <TheHeader />
+  <TheHeader />
 
   <main>
     <Search />
-    <LatestSpots />
+    <Spots />
   </main>
 
-    <TheFooter />
+  <TheFooter />
 </template>
 
 <style scoped></style>
