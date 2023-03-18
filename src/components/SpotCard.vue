@@ -2,14 +2,18 @@
 </script>
 
 <template>
-    <section class="spot_card" style="background-image: url(../assets/images/escaper_search_background.jpg);">
-        
-    </section>
+    <div class="spot_card">
+        <p>Card</p>
+    </div>
 </template>
 
 <style lang="scss" scoped>
 .spot_card {
-    width: 200px;
-    background-size: 100%;
+    width: 300px;
+    height: 200px;
+    border: solid 1px gray;
+    border-radius: 4px;
+    margin: 20px;
+    padding: 10px 15px;
 }
 </style>
