@@ -7,14 +7,14 @@ import TheFooter from './components/TheFooter.vue'
 </script>
 
 <template>
-    <TheHeader />
+  <TheHeader />
 
   <main>
     <TheSearch />
     <TheSpots />
   </main>
 
-    <TheFooter />
+  <TheFooter />
 </template>
 
 <style scoped></style>
