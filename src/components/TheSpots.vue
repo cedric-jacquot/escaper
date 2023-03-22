@@ -6,8 +6,8 @@ import SpotCard from './SpotCard.vue';
     <div class="spots_container">
         <div class="spots_filters d-flex justify-content-end align-items-center">
             <p>Spots Nature</p>
-            <button type="button" class="btn btn-primary btn-sm text-white" data-bs-toggle="button" autocomplete="off">Toggle button</button>
-            <button type="button" class="btn btn-primary btn-sm text-white active" data-bs-toggle="button" autocomplete="off" aria-pressed="true">Active toggle button</button>
+            <button type="button" class="btn btn-primary btn-sm text-white active" data-bs-toggle="button" autocomplete="off">Récents</button>
+            <button type="button" class="btn btn-primary btn-sm text-white" data-bs-toggle="button" autocomplete="off" aria-pressed="true">Populaires</button>
         </div>
         <div class="spots_list d-flex justify-content-around flex-wrap">
             <!-- foreach... -->
@@ -35,8 +35,8 @@ import SpotCard from './SpotCard.vue';
 .spots_container {
     margin: auto;
     padding: 20px;
-    width: 80%;
-    background-color: rgb(218, 218, 218);
+    width: 100%;
+    // background-color: rgb(218, 218, 218);
 }
 .spots_filters {
     margin: 10px;

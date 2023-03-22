@@ -27,7 +27,7 @@ h1 {
 .search_container {
   height: 100vh;
   width: 100vw;
-  background-image: url(../assets/images/pexels-rachel-claire-4992803.jpg);
+  background-image: url("../assets/images/pexels-rachel-claire-4992803.jpg");
   background-size: 100%;
 }
 .search_form {
