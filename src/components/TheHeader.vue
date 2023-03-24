@@ -58,6 +58,4 @@ nav {
 .nav_right > * {
   margin-left: 20px;
 }
-// navbar transition
-
 </style>

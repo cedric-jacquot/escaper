@@ -37,7 +37,7 @@
   background-size: 100%;
   color: white;
   // opacity: 50%;
-  font-size: large;
+  font-size: normal;
   font-weight: 500;
   text-shadow: 0 0 2px rgba(0, 0, 0, 0.618);
   transition: opacity .5s ease;
