@@ -1,38 +1,41 @@
 <script setup lang="ts">
-import { onMounted, ref } from 'vue'
+import { onMounted, ref } from "vue";
 
-let navBar = ref<HTMLElement>(null)
+// navBar transparency
+let navBar = ref<HTMLElement>();
 
 function scroll() {
-  const scrollYWindow = window.scrollY
+  const scrollYWindow = window.scrollY;
   if (scrollYWindow > 60) {
-    navBar.value.style.backgroundColor = 'white'
+    navBar.value!.style.backgroundColor = "white";
   } else {
-    navBar.value.style.backgroundColor = 'unset'
+    navBar.value!.style.backgroundColor = "unset";
   }
 }
 
 onMounted(() => {
-  window.addEventListener('scroll', scroll)
-})
+  window.addEventListener("scroll", scroll);
+});
 </script>
 
 <template>
   <header>
-    <Transition>
-      <nav ref="navBar" class="d-flex flex-row justify-content-between align-items-center">
-        <div class="nav_left">
-          <a href="#">
+    <nav ref="navBar" class="d-flex flex-row justify-content-between align-items-center">
+      <div class="nav_left">
+        <a href="#">
+          <router-link to="/">
             <img class="logo" src="../assets/images/mountains.png" alt="Logo Escaper" />
-          </a>
-        </div>
-        <div class="nav_right w-40 d-flex justify-content-end align-items-center">
-          <a href="#">+ Ajouter un spot</a>
-          <a href="#">Créer un compte</a>
-          <button type="button" class="btn btn-primary btn-sm text-white">Se connecter</button>
-        </div>
-      </nav>
-    </Transition>
+          </router-link>
+        </a>
+      </div>
+      <div class="nav_right w-40 d-flex justify-content-end align-items-center">
+        <a href="#">+ Ajouter un spot</a>
+        <a href="#">Créer un compte</a>
+        <button type="button" class="btn btn-primary btn-sm text-white">
+          Se connecter
+        </button>
+      </div>
+    </nav>
   </header>
 </template>
 
